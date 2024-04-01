@@ -54,20 +54,243 @@ a[class] {
 
 /* (╯ ° □ °) ╯(╯ ° □ °) ╯(╯ ° □ °) ╯ */
 
-section {
-    padding-bottom: 150px;
+/* FONTS
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+  
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700; */
+
+html {
     background-color: #000;
 }
+
+section {
+    margin-bottom: 150px;
+}
+
 .container {
     padding: 0 15px;
     width: 1180px;
+    margin: 0 auto;
 }
+
 h1 {
     color: #1bff07;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -0.03em;
 }
-h2,h3,h4 {
+
+h2,
+h3,
+h4,
+a {
     color: #fff;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -0.03em;
 }
+
 p {
     color: #fff;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
+
+.main {
+    padding: 27px 0 94px;
+    height: 765px;
+    background: url(images/main-bg.jpg) no-repeat;
+    background-position: center;
+    background-color: #000;
+    background-size: 100%;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 503px;
+}
+
+.menu__link {
+    font-size: 18px;
+    color: #fff;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
+
+.menu__link:hover {
+    color: #1bff07;
+}
+
+.main__text-wrapper {
+    margin: 252px 0 94px;
+}
+
+.main__text {
+    margin-bottom: 29px;
+    width: 430px;
+    font-size: 20px;
+}
+
+.main__title {
+    width: 919px;
+    font-size: 80px;
+    line-height: 70px;
+}
+
+.projects {
+    height: 1995px;
+}
+
+.projects__title {
+    font-size: 55px;
+    margin-bottom: 40px;
+}
+
+.project__block {
+    height: 550px;
+}
+
+.project__bg {
+    border-radius: 35px;
+}
+
+.project__name {
+    position: relative;
+    top: -140px;
+    left: 50px;
+    font-size: 35px;
+}
+
+.project__description {
+    position: relative;
+    top: -135px;
+    left: 50px;
+    font-size: 30px;
+}
+
+.projects__button {
+    margin-top: 80px;
+    display: block;
+    width: 582px;
+    line-height: 153px;
+    background-color: #1bff07;
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    border-radius: 10px;
+}
+
+.projects__button:hover {
+    background-color: #000;
+    border: 1px solid #1bff07;
+    color: #1bff07;
+}
+
+.skills__title {
+    margin-bottom: 48px;
+    font-size: 55px;
+
+}
+
+.skill__img {
+    margin: 0 0 12px 2px;
+}
+
+.skill__name {
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: #1bff07;
+}
+/* .skills h4:last-child {
+    width: 651;
+} */
+
+.skill__description {
+    margin-bottom: 60px;
+    font-size: 22px;
+    width: 778px;
+}
+
+.services__title {
+    margin-bottom: 74px;
+    font-size: 35px;
+    width: 403px;
+}
+
+.service__img {
+    border-radius: 30px;
+}
+
+.service__text-wrapper {
+    padding: 40px 0 40px 40px;
+    margin-bottom: 74px;
+    width: 100%;
+    height: 283px;
+    background-color: #191c19;
+    border-radius: 30px;
+
+}
+
+.service__name {
+    margin-bottom: 15px;
+    font-size: 55px;
+    color: #1bff07;
+}
+
+.service__description {
+    font-size: 22px;
+    width: 749px;
+}
+
+/* .service__description:nth-last-child(1) {
+    width: 724px;
+} */
+
+.contacts {
+    margin: 0 auto 150px;
+    width: 1180px;
+    height: 717px;
+
+}
+
+.contacts__block {
+    background-color: #191c19;
+    width: 1180px;
+    height: 717px;
+    border-radius: 30px;
+}
+
+.contacts__text-wrapper {
+    width: 1180px;
+    height: 717px;
+    border-radius: 30px;
+    background: url(images/contacts-bg.svg) no-repeat;
+    background-size: 55% 100%;
+    background-position-x: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 89px 125px;
+
+}
+footer {
+    margin: 0 auto;
+    height: 223px;
+    background-color: #fff;
+    border-radius: 30px;
 }
