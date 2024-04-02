@@ -75,7 +75,7 @@ section {
 
 .container {
     padding: 0 15px;
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -109,7 +109,7 @@ p {
     background: url(images/main-bg.jpg) no-repeat;
     background-position: center;
     background-color: #000;
-    background-size: 100%;
+    background-size: hover;
 }
 
 .header__wrapper {
@@ -216,14 +216,14 @@ p {
     font-size: 35px;
     color: #1bff07;
 }
-/* .skills h4:last-child {
-    width: 651;
-} */
 
 .skill__description {
     margin-bottom: 60px;
     font-size: 22px;
     width: 778px;
+}
+.skill__block:last-child {
+    width: 651px;
 }
 
 .services__title {
@@ -256,41 +256,65 @@ p {
     font-size: 22px;
     width: 749px;
 }
-
-/* .service__description:nth-last-child(1) {
+/* 
+.service__list:last-child {
     width: 724px;
 } */
 
 .contacts {
     margin: 0 auto 150px;
-    width: 1180px;
+    max-width: 1370px;
     height: 717px;
-
-}
-
-.contacts__block {
     background-color: #191c19;
-    width: 1180px;
-    height: 717px;
     border-radius: 30px;
+    position: relative;
 }
 
-.contacts__text-wrapper {
-    width: 1180px;
-    height: 717px;
-    border-radius: 30px;
+.contacts__box {
+    position: absolute;
     background: url(images/contacts-bg.svg) no-repeat;
-    background-size: 55% 100%;
-    background-position-x: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0 0 89px 125px;
-
+    background-position: right;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
 }
+.contacts__title{
+    margin: 320px 0 28px;
+    font-size: 35px;
+    line-height: 1.71429;
+}
+
+.contacts__item{
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+.contacts__link:hover{
+    color: #1bff07;
+}
+
 footer {
-    margin: 0 auto;
+    padding: 76px 0 24px;
     height: 223px;
     background-color: #fff;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.footer__description {
+    margin-bottom: 66px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000;
+}
+.footer__rights {
+    color: #000;
+    opacity: 0.5;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 27px;
+    font-weight: 400;
 }
