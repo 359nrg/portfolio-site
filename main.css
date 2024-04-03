@@ -256,10 +256,6 @@ p {
     font-size: 22px;
     width: 749px;
 }
-/* 
-.service__list:last-child {
-    width: 724px;
-} */
 
 .contacts {
     margin: 0 auto 150px;
@@ -306,6 +302,7 @@ footer {
     margin-bottom: 66px;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
+    font-size: 22px;
     line-height: 30px;
     font-weight: 700;
     color: #000;
@@ -315,6 +312,7 @@ footer {
     opacity: 0.5;
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
+    font-size: 20px;
     line-height: 27px;
     font-weight: 400;
 }
